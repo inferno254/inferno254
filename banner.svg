@@ -1,126 +1,142 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 320" width="980" height="320" role="img" aria-labelledby="title desc">
   <title id="title">Erick Neko — Inferno</title>
-  <desc id="desc">Animated flame banner: My bugs are features. My features are startups. Flutter, Solidity, Nairobi Kenya.</desc>
+  <desc id="desc">Animated purple flame banner: My bugs are features. My features are startups. Flutter, Solidity, Nairobi Kenya.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#050407"/>
-      <stop offset=".55" stop-color="#12090b"/>
-      <stop offset="1" stop-color="#2a0d06"/>
+      <stop offset="0" stop-color="#050309"/>
+      <stop offset=".55" stop-color="#0e0714"/>
+      <stop offset="1" stop-color="#1a0824"/>
     </linearGradient>
     <linearGradient id="heat" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="rgba(122,29,12,0)"/>
-      <stop offset=".35" stop-color="rgba(255,90,42,.16)"/>
-      <stop offset=".7" stop-color="rgba(255,179,71,.10)"/>
-      <stop offset="1" stop-color="rgba(255,240,200,.03)"/>
+      <stop offset="0" stop-color="rgba(88,28,135,0)"/>
+      <stop offset=".35" stop-color="rgba(168,85,247,.10)"/>
+      <stop offset=".7" stop-color="rgba(217,70,239,.06)"/>
+      <stop offset="1" stop-color="rgba(245,208,254,.02)"/>
     </linearGradient>
     <linearGradient id="flameA" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#5a1208"/>
-      <stop offset=".35" stop-color="#ff3d12"/>
-      <stop offset=".7" stop-color="#ff8a2a"/>
-      <stop offset="1" stop-color="#fff1bf"/>
+      <stop offset="0" stop-color="#2e1065"/>
+      <stop offset=".3" stop-color="#7c3aed"/>
+      <stop offset=".62" stop-color="#c026d3"/>
+      <stop offset=".85" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#fdf4ff"/>
     </linearGradient>
     <linearGradient id="flameB" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#7a1d0c"/>
-      <stop offset=".4" stop-color="#ff5a2a"/>
-      <stop offset=".78" stop-color="#ffb347"/>
-      <stop offset="1" stop-color="#ffe8a8"/>
+      <stop offset="0" stop-color="#3b0764"/>
+      <stop offset=".32" stop-color="#9333ea"/>
+      <stop offset=".65" stop-color="#d946ef"/>
+      <stop offset=".88" stop-color="#f9a8d4"/>
+      <stop offset="1" stop-color="#fae8ff"/>
+    </linearGradient>
+    <linearGradient id="flameC" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#4c1d95"/>
+      <stop offset=".4" stop-color="#a855f7"/>
+      <stop offset=".75" stop-color="#e879f9"/>
+      <stop offset="1" stop-color="#fff1f2"/>
     </linearGradient>
     <linearGradient id="titleFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fff8e8"/>
-      <stop offset=".28" stop-color="#ffd27a"/>
-      <stop offset=".58" stop-color="#ff7a2a"/>
-      <stop offset="1" stop-color="#c43a10"/>
+      <stop offset="0" stop-color="#fdf4ff"/>
+      <stop offset=".25" stop-color="#e9d5ff"/>
+      <stop offset=".55" stop-color="#c084fc"/>
+      <stop offset=".82" stop-color="#9333ea"/>
+      <stop offset="1" stop-color="#581c87"/>
     </linearGradient>
     <linearGradient id="ember" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#fff1bf"/>
-      <stop offset="1" stop-color="#ff6a1f"/>
+      <stop offset="0" stop-color="#f5d0fe"/>
+      <stop offset="1" stop-color="#a855f7"/>
     </linearGradient>
     <filter id="softGlow" x="-30%" y="-60%" width="160%" height="220%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b1"/>
-      <feGaussianBlur in="SourceGraphic" stdDeviation="22" result="b2"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="b2"/>
       <feMerge>
-        <feMergeNode in="b2" opacity=".45"/>
-        <feMergeNode in="b1" opacity=".75"/>
+        <feMergeNode in="b2" opacity=".38"/>
+        <feMergeNode in="b1" opacity=".65"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     <filter id="fireGlow" x="-20%" y="-50%" width="140%" height="200%">
-      <feGaussianBlur stdDeviation="7" result="g"/>
-      <feColorMatrix in="g" type="matrix" values="1 0 0 0 0  0 .55 0 0 0  0 0 .12 0 0  0 0 0 1 0" result="cg"/>
-      <feMerge><feMergeNode in="cg"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feGaussianBlur stdDeviation="5" result="g"/>
+      <feColorMatrix in="g" type="matrix" values=".7 0 .4 0 0  0 .25 .6 0 0  .5 0 1 0 0  0 0 0 1 0" result="cg"/>
+      <feMerge><feMergeNode in="cg" opacity=".7"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <clipPath id="clip"><rect x="0" y="0" width="980" height="320" rx="18"/></clipPath>
   </defs>
 
   <style>
     .bg { fill: url(#sky); }
-    .frame { fill:none; stroke: rgba(255,179,71,.18); stroke-width:1.2; }
+    .frame { fill:none; stroke: rgba(192,132,252,.22); stroke-width:1.2; }
     .flame { transform-box: fill-box; transform-origin: 50% 100%; }
-    .f1 { animation: lick1 1.15s ease-in-out infinite alternate; }
-    .f2 { animation: lick2 1.45s ease-in-out infinite alternate; }
-    .f3 { animation: lick3 .95s ease-in-out infinite alternate; }
-    @keyframes lick1 { 0%{transform:scaleX(.92) scaleY(.78) skewX(-4deg)} 50%{transform:scaleX(1.06) scaleY(1.12) skewX(3deg)} 100%{transform:scaleX(.98) scaleY(.88) skewX(-2deg)} }
-    @keyframes lick2 { 0%{transform:scaleX(1.04) scaleY(.84) skewX(3deg)} 50%{transform:scaleX(.9) scaleY(1.16) skewX(-4deg)} 100%{transform:scaleX(1.02) scaleY(.92) skewX(2deg)} }
-    @keyframes lick3 { 0%{transform:scaleX(.96) scaleY(.9) skewX(-2deg)} 100%{transform:scaleX(1.08) scaleY(1.06) skewX(3deg)} }
+    .f1 { animation: lick1 1.25s ease-in-out infinite alternate; }
+    .f2 { animation: lick2 1.55s ease-in-out infinite alternate; }
+    .f3 { animation: lick3 1.05s ease-in-out infinite alternate; }
+    @keyframes lick1 { 0%{transform:scaleX(.94) scaleY(.82) skewX(-3deg)} 50%{transform:scaleX(1.05) scaleY(1.1) skewX(2deg)} 100%{transform:scaleX(.98) scaleY(.9) skewX(-1deg)} }
+    @keyframes lick2 { 0%{transform:scaleX(1.03) scaleY(.86) skewX(2deg)} 50%{transform:scaleX(.92) scaleY(1.12) skewX(-3deg)} 100%{transform:scaleX(1.01) scaleY(.92) skewX(1deg)} }
+    @keyframes lick3 { 0%{transform:scaleX(.97) scaleY(.9) skewX(-2deg)} 100%{transform:scaleX(1.06) scaleY(1.05) skewX(2deg)} }
     .title { font: 900 104px Impact, "Arial Black", "Segoe UI Black", system-ui, sans-serif; letter-spacing: 5px; fill: url(#titleFill); }
-    .titleGlow { opacity:.55; filter:url(#softGlow); }
-    .glitch { animation: glitch 6.5s steps(1) infinite; fill:#ff5a2a; opacity:0; }
-    @keyframes glitch { 0%,91%,100%{opacity:0;transform:translate(0,0)} 92%{opacity:.65;transform:translate(-5px,1px)} 93%{opacity:.5;transform:translate(5px,-1px)} 94%{opacity:.35;transform:translate(-2px,0)} 95%{opacity:0} }
+    .titleGlow { opacity:.5; filter:url(#softGlow); }
+    .glitch { animation: glitch 6.5s steps(1) infinite; fill:#d946ef; opacity:0; }
+    @keyframes glitch { 0%,91%,100%{opacity:0;transform:translate(0,0)} 92%{opacity:.6;transform:translate(-5px,1px)} 93%{opacity:.45;transform:translate(5px,-1px)} 94%{opacity:.3;transform:translate(-2px,0)} 95%{opacity:0} }
     .bio1, .bio2, .bio3 { font-family: "JetBrains Mono","Cascadia Code","Fira Code","Courier New",monospace; text-anchor: middle; }
-    .bio1 { font-size: 20px; fill: #f3ece2; letter-spacing: .5px; }
-    .bio2 { font-size: 18px; fill: #ffcf8a; letter-spacing: .4px; }
-    .bio3 { font-size: 15px; fill: #b9a89a; letter-spacing: 1.2px; }
+    .bio1 { font-size: 20px; fill: #f5f3ff; letter-spacing: .5px; }
+    .bio2 { font-size: 18px; fill: #e9d5ff; letter-spacing: .4px; }
+    .bio3 { font-size: 15px; fill: #c4b5fd; letter-spacing: 1.2px; }
     .reveal1 { opacity:0; animation: reveal 8s ease forwards; }
     .reveal2 { opacity:0; animation: reveal 8s ease .45s forwards; }
     .reveal3 { opacity:0; animation: reveal 8s ease .9s forwards; }
     @keyframes reveal { 0%{opacity:0;transform:translateY(6px)} 12%{opacity:1;transform:translateY(0)} 100%{opacity:1;transform:translateY(0)} }
-    .cursor { animation: blink 1s steps(1) infinite; fill:#ff7a2a; }
+    .cursor { animation: blink 1s steps(1) infinite; fill:#c084fc; }
     @keyframes blink { 50%{opacity:0} }
     .spark { fill:url(#ember); opacity:0; }
   </style>
 
   <g clip-path="url(#clip)">
     <rect class="bg" x="0" y="0" width="980" height="320"/>
-    <rect fill="url(#heat)" x="0" y="70" width="980" height="250"/>
+    <rect fill="url(#heat)" x="0" y="120" width="980" height="200"/>
 
-    <!-- back flames -->
-    <g opacity=".55" filter="url(#fireGlow)">
-      <path class="flame f2" fill="url(#flameA)" d="M20,320 C35,250 55,230 70,170 C88,228 110,245 125,320 Z" style="animation-delay:-.2s"/>
-      <path class="flame f1" fill="url(#flameB)" d="M95,320 C112,238 138,210 160,138 C182,212 210,238 228,320 Z" style="animation-delay:-.9s"/>
-      <path class="flame f3" fill="url(#flameA)" d="M200,320 C218,252 242,228 262,165 C282,228 306,250 326,320 Z" style="animation-delay:-.4s"/>
-      <path class="flame f2" fill="url(#flameB)" d="M620,320 C640,248 666,222 688,158 C710,224 736,246 756,320 Z" style="animation-delay:-1.1s"/>
-      <path class="flame f1" fill="url(#flameA)" d="M730,320 C748,236 774,206 796,132 C818,208 844,236 862,320 Z" style="animation-delay:-.5s"/>
-      <path class="flame f3" fill="url(#flameB)" d="M835,320 C852,252 874,232 892,175 C910,232 932,250 960,320 Z" style="animation-delay:-.7s"/>
+    <!-- small flame bed: kept low so text stays clear -->
+    <g opacity=".38" filter="url(#fireGlow)">
+      <path class="flame f2" fill="url(#flameA)" d="M30,320 C40,298 52,292 60,276 C68,292 80,298 90,320 Z" style="animation-delay:-.2s"/>
+      <path class="flame f1" fill="url(#flameB)" d="M110,320 C122,295 136,288 146,268 C156,288 170,295 182,320 Z" style="animation-delay:-.9s"/>
+      <path class="flame f3" fill="url(#flameC)" d="M200,320 C212,296 226,290 236,272 C246,290 260,296 272,320 Z" style="animation-delay:-.4s"/>
+      <path class="flame f2" fill="url(#flameA)" d="M290,320 C302,297 316,291 326,274 C336,291 350,297 362,320 Z" style="animation-delay:-1.1s"/>
+      <path class="flame f1" fill="url(#flameB)" d="M380,320 C392,298 406,292 416,276 C426,292 440,298 452,320 Z" style="animation-delay:-.5s"/>
+      <path class="flame f3" fill="url(#flameC)" d="M470,320 C482,296 496,290 506,272 C516,290 530,296 542,320 Z" style="animation-delay:-.7s"/>
+      <path class="flame f2" fill="url(#flameA)" d="M560,320 C572,297 586,291 596,274 C606,291 620,297 632,320 Z" style="animation-delay:-.3s"/>
+      <path class="flame f1" fill="url(#flameB)" d="M650,320 C662,298 676,292 686,276 C696,292 710,298 722,320 Z" style="animation-delay:-1.0s"/>
+      <path class="flame f3" fill="url(#flameC)" d="M740,320 C752,295 766,288 776,268 C786,288 800,295 812,320 Z" style="animation-delay:-.6s"/>
+      <path class="flame f2" fill="url(#flameA)" d="M830,320 C842,296 856,290 866,272 C876,290 890,296 902,320 Z" style="animation-delay:-.85s"/>
+      <path class="flame f1" fill="url(#flameB)" d="M915,320 C926,299 938,293 946,278 C954,293 966,299 978,320 Z" style="animation-delay:-.25s"/>
     </g>
 
-    <!-- front flame bed -->
-    <g opacity=".92">
-      <path class="flame f1" fill="url(#flameB)" d="M-10,320 C15,265 35,255 48,210 C62,255 82,265 108,320 Z"/>
-      <path class="flame f3" fill="url(#flameA)" d="M82,320 C105,258 128,244 146,188 C164,244 188,258 210,320 Z" style="animation-delay:-.3s"/>
-      <path class="flame f2" fill="url(#flameB)" d="M185,320 C206,262 228,250 245,198 C262,250 284,262 305,320 Z" style="animation-delay:-.8s"/>
-      <path class="flame f1" fill="url(#flameA)" d="M282,320 C302,268 322,256 338,208 C354,256 374,268 394,320 Z" style="animation-delay:-.15s"/>
-      <path class="flame f3" fill="url(#flameB)" d="M372,320 C392,266 412,254 428,205 C444,254 464,266 484,320 Z" style="animation-delay:-.55s"/>
-      <path class="flame f2" fill="url(#flameA)" d="M462,320 C482,266 502,254 518,205 C534,254 554,266 574,320 Z" style="animation-delay:-.95s"/>
-      <path class="flame f1" fill="url(#flameB)" d="M552,320 C572,268 592,256 608,208 C624,256 644,268 664,320 Z" style="animation-delay:-.25s"/>
-      <path class="flame f3" fill="url(#flameA)" d="M642,320 C662,262 684,250 701,198 C718,250 740,262 760,320 Z" style="animation-delay:-.65s"/>
-      <path class="flame f2" fill="url(#flameB)" d="M738,320 C760,258 784,244 802,188 C820,244 844,258 866,320 Z" style="animation-delay:-.45s"/>
-      <path class="flame f1" fill="url(#flameA)" d="M845,320 C868,265 888,255 901,210 C915,255 935,265 990,320 Z" style="animation-delay:-.75s"/>
+    <g opacity=".62">
+      <path class="flame f1" fill="url(#flameB)" d="M-5,320 C8,302 20,297 28,284 C36,297 48,302 61,320 Z"/>
+      <path class="flame f3" fill="url(#flameA)" d="M55,320 C68,300 82,294 92,279 C102,294 116,300 129,320 Z" style="animation-delay:-.3s"/>
+      <path class="flame f2" fill="url(#flameC)" d="M123,320 C136,301 150,295 160,281 C170,295 184,301 197,320 Z" style="animation-delay:-.8s"/>
+      <path class="flame f1" fill="url(#flameB)" d="M191,320 C204,302 218,296 228,283 C238,296 252,302 265,320 Z" style="animation-delay:-.15s"/>
+      <path class="flame f3" fill="url(#flameA)" d="M259,320 C272,300 286,294 296,280 C306,294 320,300 333,320 Z" style="animation-delay:-.55s"/>
+      <path class="flame f2" fill="url(#flameC)" d="M327,320 C340,301 354,295 364,282 C374,295 388,301 401,320 Z" style="animation-delay:-.95s"/>
+      <path class="flame f1" fill="url(#flameB)" d="M395,320 C408,302 422,296 432,283 C442,296 456,302 469,320 Z" style="animation-delay:-.25s"/>
+      <path class="flame f3" fill="url(#flameA)" d="M463,320 C476,300 490,294 500,280 C510,294 524,300 537,320 Z" style="animation-delay:-.65s"/>
+      <path class="flame f2" fill="url(#flameC)" d="M531,320 C544,301 558,295 568,282 C578,295 592,301 605,320 Z" style="animation-delay:-.45s"/>
+      <path class="flame f1" fill="url(#flameB)" d="M599,320 C612,302 626,296 636,283 C646,296 660,302 673,320 Z" style="animation-delay:-.75s"/>
+      <path class="flame f3" fill="url(#flameA)" d="M667,320 C680,300 694,294 704,279 C714,294 728,300 741,320 Z" style="animation-delay:-.35s"/>
+      <path class="flame f2" fill="url(#flameC)" d="M735,320 C748,301 762,295 772,281 C782,295 796,301 809,320 Z" style="animation-delay:-1.05s"/>
+      <path class="flame f1" fill="url(#flameB)" d="M803,320 C816,302 830,296 840,283 C850,296 864,302 877,320 Z" style="animation-delay:-.5s"/>
+      <path class="flame f3" fill="url(#flameA)" d="M871,320 C884,300 898,294 908,280 C918,294 932,300 945,320 Z" style="animation-delay:-.9s"/>
+      <path class="flame f2" fill="url(#flameC)" d="M939,320 C950,302 960,297 968,285 C976,297 986,302 997,320 Z" style="animation-delay:-.2s"/>
     </g>
 
-    <!-- embers (SMIL for GitHub img/SVG) -->
+    <!-- embers (SMIL) -->
     <g>
-      <circle class="spark" cx="120" cy="275" r="2.2"><animate attributeName="cy" from="275" to="70" dur="4.6s" begin="0s" repeatCount="indefinite"/><animate attributeName="cx" values="120;132;114;126;120" dur="4.6s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.95;.75;0" dur="4.6s" begin="0s" repeatCount="indefinite"/><animate attributeName="r" values="1.2;2.4;1.1" dur="4.6s" begin="0s" repeatCount="indefinite"/></circle>
-      <circle class="spark" cx="240" cy="285" r="1.6"><animate attributeName="cy" from="285" to="95" dur="5.4s" begin="-1.2s" repeatCount="indefinite"/><animate attributeName="cx" values="240;228;248;236;240" dur="5.4s" begin="-1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;.6;0" dur="5.4s" begin="-1.2s" repeatCount="indefinite"/></circle>
-      <circle class="spark" cx="410" cy="280" r="2.8"><animate attributeName="cy" from="280" to="52" dur="5.9s" begin="-2.4s" repeatCount="indefinite"/><animate attributeName="cx" values="410;430;398;422;410" dur="5.9s" begin="-2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;.7;0" dur="5.9s" begin="-2.4s" repeatCount="indefinite"/><animate attributeName="r" values="1.4;3;1.2" dur="5.9s" begin="-2.4s" repeatCount="indefinite"/></circle>
-      <circle class="spark" cx="560" cy="282" r="1.9"><animate attributeName="cy" from="282" to="64" dur="5.1s" begin="-3.1s" repeatCount="indefinite"/><animate attributeName="cx" values="560;548;572;554;560" dur="5.1s" begin="-3.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.95;.65;0" dur="5.1s" begin="-3.1s" repeatCount="indefinite"/></circle>
-      <circle class="spark" cx="700" cy="278" r="2.4"><animate attributeName="cy" from="278" to="78" dur="4.9s" begin="-0.8s" repeatCount="indefinite"/><animate attributeName="cx" values="700;716;692;708;700" dur="4.9s" begin="-0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.95;.7;0" dur="4.9s" begin="-0.8s" repeatCount="indefinite"/></circle>
-      <circle class="spark" cx="845" cy="284" r="1.7"><animate attributeName="cy" from="284" to="88" dur="5.6s" begin="-4s" repeatCount="indefinite"/><animate attributeName="cx" values="845;832;854;840;845" dur="5.6s" begin="-4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;.55;0" dur="5.6s" begin="-4s" repeatCount="indefinite"/></circle>
-      <circle class="spark" cx="330" cy="290" r="1.4"><animate attributeName="cy" from="290" to="110" dur="6.2s" begin="-2s" repeatCount="indefinite"/><animate attributeName="cx" values="330;340;322;334;330" dur="6.2s" begin="-2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.85;.5;0" dur="6.2s" begin="-2s" repeatCount="indefinite"/></circle>
+      <circle class="spark" cx="90" cy="305" r="1.8"><animate attributeName="cy" from="305" to="235" dur="4.8s" begin="0s" repeatCount="indefinite"/><animate attributeName="cx" values="90;98;84;94;90" dur="4.8s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.85;.55;0" dur="4.8s" begin="0s" repeatCount="indefinite"/></circle>
+      <circle class="spark" cx="220" cy="308" r="1.4"><animate attributeName="cy" from="308" to="245" dur="5.2s" begin="-1.1s" repeatCount="indefinite"/><animate attributeName="cx" values="220;212;226;218;220" dur="5.2s" begin="-1.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.8;.5;0" dur="5.2s" begin="-1.1s" repeatCount="indefinite"/></circle>
+      <circle class="spark" cx="380" cy="304" r="2.1"><animate attributeName="cy" from="304" to="228" dur="5.0s" begin="-2.3s" repeatCount="indefinite"/><animate attributeName="cx" values="380;394;372;386;380" dur="5.0s" begin="-2.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;.6;0" dur="5.0s" begin="-2.3s" repeatCount="indefinite"/></circle>
+      <circle class="spark" cx="540" cy="307" r="1.6"><animate attributeName="cy" from="307" to="238" dur="5.4s" begin="-3.0s" repeatCount="indefinite"/><animate attributeName="cx" values="540;530;548;536;540" dur="5.4s" begin="-3.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.82;.5;0" dur="5.4s" begin="-3.0s" repeatCount="indefinite"/></circle>
+      <circle class="spark" cx="700" cy="305" r="1.9"><animate attributeName="cy" from="305" to="232" dur="4.7s" begin="-0.7s" repeatCount="indefinite"/><animate attributeName="cx" values="700;712;694;706;700" dur="4.7s" begin="-0.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.88;.55;0" dur="4.7s" begin="-0.7s" repeatCount="indefinite"/></circle>
+      <circle class="spark" cx="860" cy="308" r="1.5"><animate attributeName="cy" from="308" to="242" dur="5.6s" begin="-3.8s" repeatCount="indefinite"/><animate attributeName="cx" values="860;852;866;856;860" dur="5.6s" begin="-3.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.8;.48;0" dur="5.6s" begin="-3.8s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- title -->
-    <g filter="url(#fireGlow)">
-      <text class="title titleGlow" x="490" y="132" text-anchor="middle">INFERNO</text>
+    <g filter="url(#softGlow)">
       <text class="title" x="490" y="132" text-anchor="middle">INFERNO</text>
       <text class="title glitch" x="490" y="132" text-anchor="middle">INFERNO</text>
     </g>
